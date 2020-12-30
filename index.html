@@ -11,8 +11,9 @@
 <body>
     <h1>VIAJES BOSCO</h1>
     <h2>Las mejores aventuras por todo el mundo gestionadas por tu propio  centro educativo</h2>
-    <img src="img/abajo-1.png" id="abajo" onmouseover="this.src='img/abajo-2.png' "onmouseout="this.src='img/abajo-1.png'">
-    <ul id=menuinferior>
+    <img class="centrado" src="img/abajo-1.png" id="abajo" onmouseover="this.src='img/abajo-2.png' "onmouseout="this.src='img/abajo-1.png'">
+
+    <ul class="centrado">
         <li><a href=”#”>INTRODUCCIÓN</a></li>
         <li><a href=”#”>INDIA</a></li>
         <li><a href=”#”>MÉXICO</a></li>
@@ -22,5 +23,81 @@
         <li><a href=”#”>JAPÓN</a></li>
     </ul>
 
+    <div id="contenido" class="centrado">
+        <h1>NO SUEÑES,VUELA DE VERDAD</h1>
+        <h2>Tenemos los mejores aviones hacia destinos de todo el planeta. Sólo dinos dónde quieres ir</h2>
+        <img src="img/viaje.jpg" id="img">
+
+        <table class="centrado">
+            <tr>
+                <td>
+                    <h1>INDIA</h1>
+                    <img src="img/india.jpg" class="img-responsive">
+                    <p>Haz clic para elegir este destino</p>
+                </td>
+                <td>
+                    <h1>MÉXICO</h1>
+                    <img src="img/mexico.jpg"class="img-responsive">
+                    <p>Haz clic para elegir este destino</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>NUEVA ZELANDA</h1>
+                    <img src="img/nuevazelanda.jpg"class="img-responsive">
+                    <p>Haz clic para elegir este destino</p>
+                </td>
+                <td>
+                    <h1>PERÚ</h1>
+                    <img src="img/peru.jpg"class="img-responsive">
+                    <p>Haz clic para elegir este destino</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>ISLANDIA</h1>
+                    <img src="img/islandia.jpg"class="img-responsive">
+                    <p>Haz clic para elegir este destino</p>
+                </td>
+                <td>
+                    <h1>JAPÓN</h1>
+                    <img src="img/japon.jpg"class="img-responsive">
+                    <p>Haz clic para elegir este destino</p>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <form method="get" id="formulario" class="centrado">
+        <h1>ENVÍO DE DATOS</h1>
+        <p id="nombre">NOMBRE
+            <br>
+            <input id="inputs" type="text" name="nombre">
+        </p>
+
+        <p>APELLIDOS
+            <br>
+            <input id="inputs1" type="text" name="apellido">
+        </p>
+
+        <p>EMAIL
+            <br>
+            <input id="inputs2" type="email" name="email">
+        </p>
+        <p id="viajesdeseados">VIAJES DESEADOS
+            <br>
+            <input type="checkbox" name="viaje" value="india"> INDIA
+            <input type="checkbox" name="viaje" value="mexico"> MÉXICO
+            <input type="checkbox" name="viaje" value="zelanda"> NUEVA ZELANDA
+            <input type="checkbox" name="viaje" value="peru"> PERÚ
+            <input type="checkbox" name="viaje" value="islandia"> ISLANDIA
+            <input type="checkbox" name="viaje" value="japon"> JAPÓN
+        </p>
+        <p>
+            <input id="enviar" type="submit" value="ENVIAR">
+        </p>
+    </form>
+
+<script src="main.js"></script>
 </body>
 </html>
