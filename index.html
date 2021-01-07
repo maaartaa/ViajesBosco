@@ -13,7 +13,7 @@
     <h2>Las mejores aventuras por todo el mundo gestionadas por tu propio  centro educativo</h2>
     <img class="centrado" src="img/abajo-1.png" id="abajo" onmouseover="this.src='img/abajo-2.png' "onmouseout="this.src='img/abajo-1.png'">
 
-    <ul class="centrado">
+    <ul class="centrado" id="menu">
         <li><a href=”#”>INTRODUCCIÓN</a></li>
         <li><a href=”#”>INDIA</a></li>
         <li><a href=”#”>MÉXICO</a></li>
@@ -84,15 +84,17 @@
             <br>
             <input id="inputs2" type="email" name="email">
         </p>
-        <p id="viajesdeseados">VIAJES DESEADOS
-            <br>
+        <fieldset>
+            <legend id="viajesdeseados">VIAJES DESEADOS</legend>
+
             <input type="checkbox" name="viaje" value="india"> INDIA
             <input type="checkbox" name="viaje" value="mexico"> MÉXICO
             <input type="checkbox" name="viaje" value="zelanda"> NUEVA ZELANDA
             <input type="checkbox" name="viaje" value="peru"> PERÚ
             <input type="checkbox" name="viaje" value="islandia"> ISLANDIA
             <input type="checkbox" name="viaje" value="japon"> JAPÓN
-        </p>
+
+        </fieldset>
         <p>
             <input id="enviar" type="submit" value="ENVIAR">
         </p>
